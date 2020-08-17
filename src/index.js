@@ -35,10 +35,10 @@ mongoose.connect(`mongodb+srv://${process.env.MONGO_USERNAME}:${process.env.MONG
 
 
 if (process.env.NODE_ENV === 'production') {
-	app.use(express.static('frontend/build'));
+	app.use(express.static('client/build'));
 
 	app.get('*', (request, response) => {
-		response.sendFile(path.join(__dirname, '../frontend/build', 'index.html'));
+		response.sendFile(path.join(__dirname, '../client/build', 'index.html'));
 	});
 }
 
