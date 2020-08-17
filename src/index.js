@@ -1,5 +1,6 @@
 const express = require('express');
 const graphqlHttp = require('express-graphql').graphqlHTTP;
+const path = require('path');
 const mongoose = require('mongoose');
 const graphqlSchema = require('./graphql/schema/index');
 const graphqlResolvers = require('./graphql/resolvers/users');
