@@ -21,7 +21,13 @@ const Homepage = () => {
 
     const [model, setModel] = m
 
-    const URL = 'http://localhost:5000/graphql';
+    const MAIN_URL = window.location.origin;
+
+    if(MAIN_URL.includes(3)){
+        MAIN_URL.replace(3, 5)
+    }
+
+    const URL = `${MAIN_URL}/graphql`;
 
     useEffect(() => {
         const gettingUsers = {
