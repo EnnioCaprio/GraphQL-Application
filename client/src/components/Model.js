@@ -29,9 +29,9 @@ const Model = (props) => {
                 <button onClick={() => setModel(!model)}>X</button>
             </div>
             <div className="model-structure-inputs">
-                <input type="text" id="username" placeholder="username"/><br />
-                <input type="text" id="email" placeholder="email"/><br />
-                <input type="text" id="password" placeholder="password"/><br />
+                <input type="text" id="username" autoComplete="false" placeholder="username"/><br />
+                <input type="text" id="email" autoComplete="false" placeholder="email"/><br />
+                <input type="text" id="password" autoComplete="false" placeholder="password"/><br />
                 <button onClick={updateSetting}>Update</button>
             </div>
         </div>

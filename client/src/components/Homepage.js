@@ -212,13 +212,13 @@ const Homepage = () => {
                     <div className={form ? "container-form__add" : "container-form__add__hide"}>
                         <form onSubmit={addUser}>
                             <div className="container-form__add__input">
-                                <input type="text" value={username || ''} onChange={(e) => setUsername(e.target.value)} placeholder="username"/>
+                                <input type="text" value={username || ''} onChange={(e) => setUsername(e.target.value)} autoComplete="false" placeholder="username"/>
                             </div>
                             <div className="container-form__add__input">
-                                <input type="text" value={email || ''} onChange={(e) => setEmail(e.target.value)} placeholder="email"/> 
+                                <input type="text" value={email || ''} onChange={(e) => setEmail(e.target.value)} autoComplete="false" placeholder="email"/> 
                             </div>
                             <div className="container-form__add__input">
-                                <input type="text" value={password || ''} onChange={(e) => setPassword(e.target.value)} placeholder="password"/> 
+                                <input type="password" value={password || ''} onChange={(e) => setPassword(e.target.value)} autoComplete="false" placeholder="password"/> 
                             </div>
                             <div className="container-form__button">
                                 <button>Create User</button>

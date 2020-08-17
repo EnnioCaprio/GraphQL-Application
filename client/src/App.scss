@@ -40,6 +40,10 @@ html, body{
     text-align: center;
 }
 
+button{
+    outline: none;
+}
+
 .container-form__open__button{
     display: inline-block;
     margin: 0;
@@ -99,6 +103,7 @@ html, body{
         font-weight: bold;
         transition: all 0.3s ease-in;
         cursor: pointer;
+        outline: none;
     }
 }
 
